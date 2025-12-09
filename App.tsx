@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Code2, Sparkles, ChevronDown } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Sparkles } from 'lucide-react';
 import Countdown from './components/Countdown';
 import NewsletterForm from './components/NewsletterForm';
 import Aurora from './components/Aurora';
-import MegaMenu from './components/MegaMenu';
+import Header from './components/Header';
 import { Button } from './components/ui/button';
 
 function App() {
@@ -14,13 +14,20 @@ function App() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Handlers to manage menu state with a slight delay if needed, 
-  // but for now direct state manipulation for simplicity
-  const handleMouseEnter = () => setIsMenuOpen(true);
-  const handleMouseLeave = () => setIsMenuOpen(false);
+  const handleMouseEnter = () => {
+    setIsMenuOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <div className="h-screen w-screen overflow-x-hidden overflow-y-hidden bg-white p-4 sm:p-6 md:p-8">
+      {/* Header Component */}
+      <div className="relative z-50 mb-6">
+        <Header />
+      </div>
       
       {/* Black Rounded Rectangle Container */}
       <div className="relative w-full h-full max-w-[1850px] mx-auto bg-black rounded-2xl overflow-hidden flex flex-col shadow-2xl">
@@ -32,78 +39,9 @@ function App() {
             speed={0.5}
           />
 
-        {/* Floating Pill Header & Mega Menu Container */}
-        {/* Changed positioning to absolute to stay within the rounded container */}
-        <div 
-          className="absolute top-6 left-0 right-0 z-50 flex flex-col items-center px-4 pointer-events-none"
-          onMouseLeave={handleMouseLeave}
-        >
-          <motion.header 
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="pointer-events-auto w-full max-w-5xl bg-white/95 backdrop-blur-md text-black h-14 px-4 flex items-center justify-between shadow-[0_4px_20px_rgb(0,0,0,0.08)] border border-white/50 ring-1 ring-black/5 relative z-20"
-            style={{ borderRadius: '12px' }}
-          >
-            {/* Logo Section */}
-            <div className="flex items-center gap-2 cursor-pointer group">
-              <div className="bg-black text-white p-1 rounded-md transition-transform group-hover:scale-105">
-                <Code2 className="w-5 h-5" />
-              </div>
-              <span className="font-bold text-xl tracking-tight">VibesDev</span>
-            </div>
-            
-            {/* Navigation - Centered (Hidden on mobile for space) */}
-            <nav className="hidden md:flex items-center gap-6 font-medium text-sm text-gray-600 h-full">
-              <div 
-                className="h-full flex items-center relative group"
-                onMouseEnter={handleMouseEnter}
-              >
-                <a 
-                  href="#" 
-                  className={`flex items-center gap-1.5 px-4 py-2 rounded-[0px] transition-all duration-200 ${
-                    isMenuOpen 
-                      ? 'bg-gray-100 text-black font-semibold' 
-                      : 'hover:bg-gray-50 hover:text-black'
-                  }`}
-                >
-                  Platform 
-                  <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-300 ${isMenuOpen ? 'rotate-180' : ''}`} />
-                </a>
-                {/* Invisible bridge to prevent menu closing when moving cursor from nav to menu */}
-                <div className="absolute top-full left-0 w-full h-6 bg-transparent" />
-              </div>
-              
-              <a href="#" className="hover:text-black transition-colors px-4 py-2 rounded-[20px] hover:bg-gray-50">Features</a>
-              <a href="#" className="hover:text-black transition-colors px-4 py-2 rounded-[20px] hover:bg-gray-50">Resources</a>
-              <a href="#" className="hover:text-black transition-colors px-4 py-2 rounded-[20px] hover:bg-gray-50">Pricing</a>
-            </nav>
-
-            {/* CTA / Right Actions */}
-            <div className="flex items-center gap-4">
-              <a href="#" className="text-sm font-medium hidden sm:block text-gray-600 hover:text-black transition-colors">Log in</a>
-              <Button size="sm" className="rounded-full bg-black text-white hover:bg-gray-800 px-6 h-9 font-medium shadow-md border border-white/10">
-                Get Access
-              </Button>
-            </div>
-          </motion.header>
-
-          {/* Mega Menu */}
-          <AnimatePresence>
-            {isMenuOpen && (
-              <MegaMenu 
-                onMouseEnter={handleMouseEnter} 
-                onMouseLeave={handleMouseLeave} 
-              />
-            )}
-          </AnimatePresence>
-        </div>
-
         {/* Main Content */}
         <main 
-          className={`flex-1 flex flex-col items-center justify-center p-4 sm:p-8 z-10 w-full max-w-6xl mx-auto text-center mt-20 sm:mt-0 transition-all duration-500 ease-in-out ${
-            isMenuOpen ? 'blur-md opacity-30 scale-95 pointer-events-none' : 'blur-0 opacity-100 scale-100'
-          }`}
+          className="flex-1 flex flex-col items-center justify-center p-4 sm:p-8 z-10 w-full max-w-6xl mx-auto text-center mt-20 sm:mt-0"
         >
           <div className="space-y-6 sm:space-y-10 w-full flex flex-col items-center">
             
