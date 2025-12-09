@@ -1,12 +1,293 @@
-# https://www.robotstxt.org/robotstxt.html
+Sitemap: https://vibesdev.app/sitemap.xml
+
 User-agent: *
 Allow: /
 
-Sitemap: https://vibesdev.tech/sitemap.xml
+Sitemap: https://vibesdev.app/sitemap.xml
 
-# Crawl-delay: 10
-# Uncomment and adjust the above line if needed to limit crawl rate
+Allow: /
 
-# Disallow: /admin/
-# Disallow: /private/
-# Add any other disallowed paths above
+User-agent: Googlebot
+Allow: /*.js$
+Allow: /*.css$
+
+User-agent: *
+Clean-param: ref /   # affiliate/referral
+Clean-param: utm_source&utm_medium&utm_campaign / 
+Clean-param: gclid / 
+
+Host: vibesdev.app
+
+User-agent: *
+Disallow: /*.sql$
+Disallow: /*.log$
+Disallow: /*.bak$
+Disallow: /*.tmp$
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot
+Allow: /api/
+Allow: /cdn/
+
+User-agent: Googlebot
+Allow: /*?test=*
+
+User-agent: 008
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DOC
+Allow: /
+
+User-agent: Download Ninja
+Allow: /
+
+User-agent: Fetch
+Allow: /
+
+User-agent: Gigabot
+Allow: /
+
+User-agent: Grub-client
+Allow: /
+
+User-agent: HTTrack
+Allow: /
+
+User-agent: K2spider
+Allow: /
+
+User-agent: Larbin
+Allow: /
+
+User-agent: Libwww
+Allow: /
+
+User-agent: Linko
+Allow: /
+
+User-agent: MarketDefenderBot
+Allow: /
+
+User-agent: Microsoft URL Control
+Allow: /
+
+User-agent: Microsoft.URL.Control
+Allow: /
+
+User-agent: MSIECrawler
+Allow: /
+
+User-agent: NPBot
+Allow: /
+
+User-agent: Offline Explorer
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: PSBot
+Allow: /
+
+User-agent: Robozilla
+Allow: /
+
+User-agent: SiteSnagger
+Allow: /
+
+User-agent: Sitecheck.internetseer.com
+Allow: /
+
+User-agent: Spbot
+Allow: /
+
+User-agent: Teoma
+Allow: /
+
+User-agent: Teleport
+Allow: /
+
+User-agent: TeleportPro
+Allow: /
+
+User-agent: UbiCrawler
+Allow: /
+
+User-agent: WebCopier
+Allow: /
+
+User-agent: WebReaper
+Allow: /
+
+User-agent: WebStripper
+Allow: /
+
+User-agent: WebZIP
+Allow: /
+
+User-agent: Wget
+Allow: /
+
+User-agent: Xenu
+Allow: /
+
+User-agent: Zao
+Allow: /
+
+User-agent: Zealbot
+Allow: /
+
+User-agent: ZyBORG
+Allow: /
+
+# ===========================================================
+# MAJOR SEARCH ENGINES
+# ===========================================================
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Exabot
+Allow: /
+
+User-agent: Google-AdSense
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Sogou Spider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: YandexImages
+Allow: /
+
+# ===========================================================
+# SOCIAL MEDIA BOTS
+# ===========================================================
+User-agent: Discordbot
+Allow: /
+
+User-agent: FacebookExternalHit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# ===========================================================
+# AI CRAWLERS
+# ===========================================================
+User-agent: CCBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: GPT-ImageBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# ===========================================================
+# SEO TOOLS
+# ===========================================================
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: DotBot
+Allow: /
+
+User-agent: MJ12bot
+Allow: /
+
+User-agent: Moz
+Allow: /
+
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+User-agent: SeobilityBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: Sitebulb
+Allow: /
+
+# ===========================================================
+# ARCHIVE & PREVIEW SERVICES
+# ===========================================================
+User-agent: Applebot
+Allow: /
+
+User-agent: Archive.org_bot
+Allow: /
+
+User-agent: IA_Archiver
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
