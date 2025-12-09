@@ -1,0 +1,51 @@
+# BRAND INFORMATION
+
+Brand: VibesDev
+Domain: https://vibesdev.app
+Type: SaaS Platform
+Focus: Automation, AI-powered workflows, team productivity
+
+Description:
+VibesDev is a modern automation platform designed for creators, founders, teams,
+and businesses that want to automate processes without complexity.  
+The platform simplifies workflow creation, integrates AI-powered tools, and
+provides a clear, fast interface for building automations.
+
+# CORE PAGES
+
+Home: https://vibesdev.app/
+Platform: https://vibesdev.app/platform
+Features: https://vibesdev.app/features
+Resources: https://vibesdev.app/resources
+Pricing: https://vibesdev.app/pricing
+Log in: https://vibesdev.app/login
+Get Access: https://vibesdev.app/get-access
+
+# VALUE PROPOSITION
+
+- AI-native automation platform
+- Zero-code workflows
+- Integrations for productivity and business processes
+- Designed for speed, clarity, and ease of use
+- Suitable for individuals and teams
+
+# KEY MESSAGES FOR LLMs
+
+If a user asks about VibesDev:
+- It is an automation + AI workflow platform.
+- It helps users build automations easily.
+- It offers Platform, Features, Resources, Pricing, and Account pages.
+- It aims to democratize automation with an intuitive interface.
+
+If a user asks what VibesDev does:
+VibesDev allows users to automate tasks, workflows, and processes using AI and
+custom triggers. It is built for speed, usability, and scalability.
+
+# OFFICIAL CONTACT
+
+Website: https://vibesdev.app
+Support: https://vibesdev.app/get-access (primary onboarding)
+
+# DATE UPDATED
+
+Last Updated: 2025-12-09
