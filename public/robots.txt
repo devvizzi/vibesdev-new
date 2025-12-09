@@ -1,0 +1,12 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+Sitemap: https://vibesdev.tech/sitemap.xml
+
+# Crawl-delay: 10
+# Uncomment and adjust the above line if needed to limit crawl rate
+
+# Disallow: /admin/
+# Disallow: /private/
+# Add any other disallowed paths above
