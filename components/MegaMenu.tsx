@@ -66,6 +66,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ onMouseEnter, onMouseLeave }) => {
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.2 }}
       className="absolute top-full left-0 right-0 mt-4 w-full max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-white/20 pointer-events-auto"
+      style={{ userSelect: 'none' }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       role="region"

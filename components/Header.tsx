@@ -63,7 +63,8 @@ const Header = () => {
           fontWeight: 600,
           border: '1px solid rgba(0,0,0,0.03)',
           boxShadow: '0 4px 20px rgba(0,0,0,0.04)',
-          margin: '0 12px'
+          margin: '0 12px',
+          userSelect: 'none'
         }}
       >
         {/* Logo Section */}
