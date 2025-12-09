@@ -1,0 +1,7 @@
+/* TEAM */
+Developer: VibesDev Team
+Website: https://vibesdev.app
+
+/* SITE */
+Last update: 2025-12-09
+Technology: Next.js, Vercel, Node.js
